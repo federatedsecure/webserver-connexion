@@ -4,7 +4,7 @@
 # installing prerequisites
 
 ```
-pip install django
+pip install connexion waitress six
 pip install federatedsecure-server
 ```
 
