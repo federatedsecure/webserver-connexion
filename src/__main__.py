@@ -11,7 +11,7 @@ import waitress
 from flask import current_app
 
 from federatedsecure.server.bus import Bus
-from federatedsecure.webserver.connexion.encoder import JSONEncoder
+from encoder import JSONEncoder
 
 
 def main():

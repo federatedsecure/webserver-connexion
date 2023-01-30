@@ -1,7 +1,7 @@
 import datetime
 
 import six
-from federatedsecure.webserver.connexion import typing_utils
+import typing_utils
 
 
 def _deserialize(data, klass):

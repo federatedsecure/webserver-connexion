@@ -3,7 +3,7 @@ import pprint
 import six
 import typing
 
-from federatedsecure.webserver.connexion import util
+import util
 
 T = typing.TypeVar('T')
 
