@@ -4,7 +4,7 @@ contains the entry points of the API
 
 from flask import current_app
 
-from federatedsecure.server.server.exceptions import handle_exception
+from federatedsecure.server.exceptions import handle_exception
 
 
 def get_bus():
