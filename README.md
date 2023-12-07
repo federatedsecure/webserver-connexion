@@ -14,5 +14,5 @@ pip install federatedsecure-server
 ```
 git clone https://github.com/federatedsecure/webserver-connexion
 cd webserver-connexion/src
-python main.py --port=<port>
+python __main__.py --port=<port>
 ```
