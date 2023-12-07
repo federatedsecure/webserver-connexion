@@ -5,7 +5,7 @@
 # installing prerequisites
 
 ```
-pip install connexion waitress six
+pip install connexion[flask,uvicorn,swagger-ui]
 pip install federatedsecure-server
 ```
 

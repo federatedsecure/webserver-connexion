@@ -6,12 +6,10 @@ the main module
 
 import sys
 import connexion
-import waitress
 
 from flask import current_app
 
 from federatedsecure.server.bus import Bus
-from encoder import JSONEncoder
 
 
 def main():
@@ -27,8 +25,7 @@ def main():
 
     bus = Bus()
 
-    app = connexion.App(__name__, specification_dir='openapi/')
-    app.app.json_encoder = JSONEncoder
+    app = connexion.FlaskApp(__name__, specification_dir='openapi/')
     app.add_api('openapi.yaml',
                 arguments={'title': 'Federated Secure Computing'},
                 pythonic_params=True)
@@ -43,7 +40,7 @@ def main():
         response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,PATCH,DELETE')
         return response
 
-    waitress.serve(app, host="0.0.0.0", port=port)
+    app.run(port=port)
 
 
 if __name__ == '__main__':
