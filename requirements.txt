@@ -1,4 +1,1 @@
-flask
-connexion
-waitress
-six
+connexion[flask,uvicorn,swagger-ui]
