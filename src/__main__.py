@@ -40,7 +40,7 @@ def main():
         response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,PATCH,DELETE')
         return response
 
-    app.run(port=port)
+    app.run(port=port, host='0.0.0.0')
 
 
 if __name__ == '__main__':
