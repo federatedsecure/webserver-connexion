@@ -14,5 +14,11 @@ pip install federatedsecure-server
 ```
 git clone https://github.com/federatedsecure/webserver-connexion
 cd webserver-connexion/src
-python __main__.py --port=<port>
+python __main__.py
+```
+
+any optional named parameters are passed to the uvicorn server, e.g.
+
+```
+python __main__.py port=55000
 ```
